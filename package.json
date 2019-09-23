@@ -1,0 +1,40 @@
+{
+  "name": "express-api-test",
+  "version": "1.0.0",
+  "description": "An express.js based To Do API.",
+  "main": "src/app.js",
+  "author": "Cumulus Consulting, LLC",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "gulp",
+    "start": "babel-node src/app.js",
+    "watch": "nodemon --watch src --ignore 'src/db.json' --exec babel-node src/app.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "express": "^4.17.1",
+    "node-json-db": "^1.0.1",
+    "source-map-support": "^0.5.12"
+  },
+  "devDependencies": {
+    "husky": "^3.0.5",
+    "lint-staged": "^9.3.0",
+    "nodemon": "^1.19.2",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "git update-index --again",
+      "pre-commit": "lint-staged"
+    }
+  }
+}

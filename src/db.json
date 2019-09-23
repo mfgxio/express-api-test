@@ -1,0 +1,19 @@
+{
+  "todo": [
+    {
+      "id": "b221564c-74a5-4f8e-82a5-50e0ea85a822",
+      "name": "Complete Coding Challenge",
+      "description": "Complete the express.js coding challenge."
+    },
+    {
+      "id": "5a53f7c8-511d-49ac-b2ff-3a24a48d7b71",
+      "name": "On-Site Interview",
+      "description": "Get an on-site interview."
+    },
+    {
+      "id": "520b586b-9d8e-49ff-9ef3-f644550fbcb8",
+      "name": "Get The Job",
+      "description": "Pass the on-site interview and get the job."
+    }
+  ]
+}
